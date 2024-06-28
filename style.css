@@ -36,7 +36,7 @@ a{
     background-color: #007bff;
     color: white;
     padding: 10px;
-    margin: 10px 0;
+    margin: 5px 0;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s;
@@ -50,12 +50,13 @@ a{
     height: 50px;
 }
 
-.hidden-links{
-    display: none;
-    transition: max-height 0.5s ease-in-out;
-    width: 80%;
-    text-align: center;
-    margin: 0 auto;
+.extra-links{
+    max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
 }
 .link-ctr{
     background-color: #c4d100;
@@ -70,4 +71,11 @@ a{
 p, .social{
     font-size: 15px;
     text-decoration: none;
+}
+.extra-links a {
+    display: block;
+    margin: 5px 0;
+}
+.extra-links.show {
+    max-height: 200px; /* Ajuste conforme necessário */
 }

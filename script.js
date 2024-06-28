@@ -1,9 +1,23 @@
-document.getElementById('expand').addEventListener('click', function(event) {
+function toggleVisibility(event, elementId) {
     event.preventDefault();
-    var extraLinks = document.getElementById('extra-links');
-    if (extraLinks.style.display === 'none' || extraLinks.style.display === '') {
-        extraLinks.style.display = 'block';
-    } else {
-        extraLinks.style.display = 'none';
-    }
+    var elements = document.querySelectorAll('.extra-links');
+    elements.forEach(function(element) {
+        if (element.id === elementId) {
+            if (element.classList.contains('show')) {
+                element.classList.remove('show');
+            } else {
+                element.classList.add('show');
+            }
+        } else {
+            element.classList.remove('show');
+        }
+    });
+}
+
+document.getElementById('expand').addEventListener('click', function(event) {
+    toggleVisibility(event, 'extra-links');
+});
+
+document.getElementById('expand2').addEventListener('click', function(event) {
+    toggleVisibility(event, 'extra-links2');
 });
