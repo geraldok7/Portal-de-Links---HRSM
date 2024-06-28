@@ -29,7 +29,7 @@ body {
 .titulo h1 {
     margin: 10px 10px;
     margin-bottom: 20px;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 a {
@@ -90,4 +90,20 @@ p,
 .extra-links.show {
     max-height: 200px;
     /* Ajuste conforme necessário */
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 10px;
+    }
+    .link, .extra-links a {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+    .titulo h1 {
+        font-size: 1.2em;
+    }
+    .igesdf {
+        width: 80px;
+    }
 }
