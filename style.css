@@ -76,6 +76,10 @@ a {
     transition: background-color 0.3s;
 }
 
+#restrito{
+    background-color: #e87400;
+}
+
 p,
 .social {
     font-size: 15px;
