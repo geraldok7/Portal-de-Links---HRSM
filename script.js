@@ -21,3 +21,7 @@ document.getElementById('expand').addEventListener('click', function(event) {
 document.getElementById('expand2').addEventListener('click', function(event) {
     toggleVisibility(event, 'extra-links2');
 });
+
+document.getElementById('expand3').addEventListener('click', function(event) {
+    toggleVisibility(event, 'extra-links3');
+});
