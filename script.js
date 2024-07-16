@@ -7,6 +7,10 @@ function toggleVisibility(event, elementId) {
                 element.classList.remove('show');
             } else {
                 element.classList.add('show');
+                // Adiciona fechamento automático após 10 segundos
+                setTimeout(function() {
+                    element.classList.remove('show');
+                }, 5000);
             }
         } else {
             element.classList.remove('show');
