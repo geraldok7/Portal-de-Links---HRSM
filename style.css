@@ -76,7 +76,6 @@ a {
     transition: background-color 0.3s;
 }
 
-
 p,
 .social {
     font-size: 15px;
@@ -97,13 +96,17 @@ p,
     .container {
         padding: 10px;
     }
-    .link, .extra-links a {
+
+    .link,
+    .extra-links a {
         padding: 8px;
         font-size: 0.9em;
     }
+
     .titulo h1 {
         font-size: 1.2em;
     }
+
     .igesdf {
         height: 40px;
     }
