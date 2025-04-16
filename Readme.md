@@ -16,7 +16,7 @@ Portal centralizador de links úteis do HRSM.
 
 ### Localmente
 
-git clone https://github.com/seu-usuario/hrsm-portal.git
+git clone [https://github.com/seu-usuario/hrsm-portal.git](https://github.com/geraldok7/Portal-de-Links---HRSM.git)
 cd hrsm-portal
 # Abra index.html no navegador
 
