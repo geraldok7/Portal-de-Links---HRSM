@@ -4,76 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Links HRSM</title>
+    <meta name="description" content="Links úteis do Hospital Regional de Santa Maria">
+    <title>Links Úteis - Hospital Regional de Santa Maria</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/img/logo-home-1.png">
+    <link rel="icon" href="/img/logo-home-1.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
     <div class="container">
-        <!-- Foto de Perfil -->
-        <img src="./img/HRSM (1).jpeg" alt="Foto de Perfil" class="profile-pic">
+        <!-- Cabeçalho com foto e título -->
+        <header class="header">
+            <img src="./img/HRSM (1).jpeg" alt="Hospital Regional de Santa Maria" class="profile-pic" loading="lazy">
+            <h1 class="titulo">Hospital Regional de Santa Maria</h1>
+        </header>
 
-        <!-- Título Principal -->
-        <div class="titulo">
-            <h1>Hospital Regional de Santa Maria</h1>
-        </div>
+        <main class="main-content">
+            <!-- Seção de Apresentações -->
+            <section class="link-section">
+                <button class="link-toggle" id="expand3" aria-expanded="false" aria-controls="extra-links3">
+                    Confirmar Presença / Apresentações / Artigos
+                    <span class="toggle-icon">+</span>
+                </button>
+                <div class="extra-links" id="extra-links3" hidden>
+                    <a href="https://forms.office.com/r/8MbHhspU0z" class="link-ctr" target="_blank" rel="noopener noreferrer">
+                        Confirmação de Presença
+                    </a>
+                    <a href="https://firebasestorage.googleapis.com/v0/b/hrsm-76ee6.appspot.com/o/Indicadores%20de%20Performance%20HRSM%2019.03.2025.pdf?alt=media&token=46316f5a-44d6-4ec4-b32d-675381d1045f" 
+                       class="link-ctr" target="_blank" rel="noopener noreferrer">
+                        Baixar Apresentação
+                    </a>
+                </a>
+                <a href="https://ihbdf-my.sharepoint.com/:b:/g/personal/geraldo_silva_igesdf_org_br/EWUkwWw5iJ5EohcuXQxjEb0BgmfLVOsdJB0RCJEclyHEkw?e=k3g0KQ" 
+                   class="link-ctr" target="_blank" rel="noopener noreferrer">
+                    Baixar Artigo
+                </a>
+                </div>
+            </section>
 
-        <!-- Seção de Apresentações -->
-        <section>
-            <a class="link" id="expand3">Apresentações <br> Lista de Presença</a>
-            <div class="extra-links" id="extra-links3">
-                <a href="https://forms.office.com/r/N7TktZsaMv" class="link-ctr" target="_blank">Confirmar Presença</a>
-                <a href="https://firebasestorage.googleapis.com/v0/b/hrsm-76ee6.appspot.com/o/Indicadores%20de%20Performance%20HRSM%2019.03.2025.pdf?alt=media&token=46316f5a-44d6-4ec4-b32d-675381d1045f" class="link-ctr" target="_blank" >Baixar Apresentação</a>
-            </div>
-        </section>
+            <!-- Seção de Painéis HRSM -->
+            <section class="link-section">
+                <button class="link-toggle" id="expand" aria-expanded="false" aria-controls="extra-links">
+                    Monitoramento de Portas
+                    <span class="toggle-icon">+</span>
+                </button>
+                <div class="extra-links" id="extra-links" hidden>
+                    <a href="https://monitoramento.igesdf.org.br/public-dashboards/bf43bd4c35934ef5910ff5bc4d824bdb?orgId=1&refresh=5s"
+                       class="link-ctr" target="_blank" rel="noopener noreferrer">
+                       🏥 Clínica Médica
+                    </a>
+                    <a href="https://monitoramento.igesdf.org.br/public-dashboards/a461142aeeaf447ab0f231b5df87dd1e?orgId=1&refresh=5s"
+                       class="link-ctr" target="_blank" rel="noopener noreferrer">
+                       🏥 Cirurgia Geral
+                    </a>
+                    <a href="https://monitoramento.igesdf.org.br/public-dashboards/0042745e989248b5bf4cd763b4d4973e?orgId=1&refresh=5s"
+                       class="link-ctr" target="_blank" rel="noopener noreferrer">
+                       🏥 Ginecologia e Obstetrícia
+                    </a>
+                    <a href="https://monitoramento.igesdf.org.br/public-dashboards/dd89f646286243f29f9d651be554bf7f?orgId=1&refresh=5s"
+                       class="link-ctr" target="_blank" rel="noopener noreferrer">
+                       🏥 Ortopedia
+                    </a>
+                    <a href="https://monitoramento.igesdf.org.br/public-dashboards/fcaa154107d447eb97fe2814e9ee9fbf?orgId=1&refresh=5s"
+                       class="link-ctr" target="_blank" rel="noopener noreferrer">
+                       🏥 Pediatria
+                    </a>
+                </div>
+            </section>
 
-        <!-- Seção de Painéis HRSM -->
-        <section>
-            <a class="link" id="expand">Painéis HRSM</a>
-            <div class="extra-links" id="extra-links">
-                <a href="https://app.powerbi.com/reportEmbed?reportId=cf6c6cba-b794-431d-80b5-3caaca588ce7&autoAuth=true&ctid=d710e997-27e7-4fa6-9dae-8f19074f2b7e"
-                   class="link-ctr" target="_blank">Bandeiramentos / Restrições</a>
-                <a href="https://app.powerbi.com/reportEmbed?reportId=da54058b-88a3-4858-a0f3-eef51714fd4a&autoAuth=true&ctid=d710e997-27e7-4fa6-9dae-8f19074f2b7e"
-                   class="link-ctr" target="_blank">Mapeamento Cirúrgico</a>
-                <a href="https://app.powerbi.com/reportEmbed?reportId=cd48fae9-ed1b-4e4b-9afe-5257fb6ef870&autoAuth=true&ctid=d710e997-27e7-4fa6-9dae-8f19074f2b7e"
-                   id="restrito" class="link-ctr" target="_blank">Núcleo de Pessoas</a>
-            </div>
-        </section>
+            <!-- Links Adicionais -->
+            <section class="link-section">
+                <a href="https://firebasestorage.googleapis.com/v0/b/hrsm-76ee6.appspot.com/o/51%C2%BA%20Termo%20Aditivo%20ao%20CG.pdf?alt=media&token=1dacee03-e7d4-4af8-a4f6-d06470fd1a48" 
+                   class="link" target="_blank" rel="noopener noreferrer">
+                    Contrato de Gestão
+                </a>
+                <a href="https://indicadores.igesdf.org.br/" class="link" target="_blank" rel="noopener noreferrer">
+                    Portal de Indicadores
+                </a>
+            </section>
+        </main>
 
-        <!-- Seção de Links Lean -->
-        <section>
-            <a class="link" id="expand2">Links Lean</a>
-            <div class="extra-links" id="extra-links2">
-                <a href="https://ihbdf-my.sharepoint.com/:f:/g/personal/hericson_sousa_igesdf_org_br/Eo1jxtfUps9DhB8QXN8zSWsBse6UhB7qr0GXtpT_jvuvdg?e=3B4Jyq"
-                   class="link-ctr" target="_blank">Pronto Socorro</a>
-                <a href="https://ihbdf-my.sharepoint.com/:f:/g/personal/hericson_sousa_igesdf_org_br/EjH0tB_O6k5LrPZq99h3ViUBAVy664He9efzqbOXwTz6zQ?e=6ZreMd"
-                   class="link-ctr" target="_blank">Centro Cirúrgico</a>
-                <a href="https://ihbdf-my.sharepoint.com/:f:/g/personal/hericson_sousa_igesdf_org_br/EvJ-hEisUipKlqJKR4gmGy0BlqB3ajVgHbzOaozmvulAtw?e=4bRqb0"
-                   class="link-ctr" target="_blank">Centro Obstétrico</a>
-            </div>
-        </section>
-
-        <!-- Links Adicionais -->
-        <section>
-            <a href="https://firebasestorage.googleapis.com/v0/b/hrsm-76ee6.appspot.com/o/51%C2%BA%20Termo%20Aditivo%20ao%20CG.pdf?alt=media&token=1dacee03-e7d4-4af8-a4f6-d06470fd1a48" 
-               class="link" target="_blank">Contrato de Gestão</a>
-            <a href="https://indicadores.igesdf.org.br/" class="link" target="_blank">Portal de Indicadores</a>
-        </section>
-
-        <!-- Rodapé com Logo -->
-        <footer>
-            <a href="https://igesdf.org.br/" target="_blank">
-                <img src="https://igesdf.org.br/wp-content/uploads/2022/02/logo-home-1.png" class="igesdf" alt="IGESDF">
+        <!-- Rodapé -->
+        <footer class="footer">
+            <a href="https://igesdf.org.br/" target="_blank" rel="noopener noreferrer">
+                <img src="https://igesdf.org.br/wp-content/uploads/2022/02/logo-home-1.png" 
+                     class="igesdf" 
+                     alt="IGESDF - Instituto de Gestão Estratégica de Saúde do Distrito Federal"
+                     loading="lazy">
             </a>
+            <p class="developer">
+                Desenvolvido por <a class="social" href="https://www.linkedin.com/in/geraldok7/" target="_blank" rel="noopener noreferrer">Geraldo Augusto</a>
+            </p>
         </footer>
     </div>
 
-<!--     Desenvolvedor  -->
-    <p>Desenvolvido por <a class="social" href="https://www.linkedin.com/in/hericsonhenrique/" target="_blank">Hericson Henrique</a></p>
-    
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
